@@ -1,0 +1,18 @@
+#!/bin/bash
+ACTION=$1
+
+OPTION=$1
+VOLUME=$(wpctl get-volume @DEFAULT_AUDIO_SINK@)
+SET_VOLUME=$2
+
+if [ "$OPTION" == "up" ]; then
+	$(pactl set-sink-volume @DEFAULT_SINK@ +5%)
+elif [ "$OPTION" == "down" ]; then
+	$(pactl set-sink-volume @DEFAULT_SINK@ -5%)
+elif [ "$OPTION" == "mute" ]; then
+	$(pactl set-sink-mute @DEFAULT_SINK@ toggle)
+else
+	$(wpctl set-volume @DEFAULT_AUDIO_SINK@ "$SET_VOLUME")
+fi
+
+

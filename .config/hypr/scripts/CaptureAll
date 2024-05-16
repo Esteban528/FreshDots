@@ -1,0 +1,9 @@
+#!/bin/bash
+
+FILE=$HOME/Pictures/Screenshots/$(date +'%s_grim.png')
+grim $FILE
+wl-copy < "$FILE"
+dunstify "Screenshot taked" "$FILE" "$FILE"
+
+
+# play $HOME/.config/hypr/assets/sounds/camera-shutter.ogg

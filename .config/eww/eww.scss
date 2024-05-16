@@ -1,0 +1,176 @@
+* {
+  all: unset; //Unsets everything so you can style everything from scratch
+}
+
+//Global Styles
+.bar0,
+.bar1 {
+  background-color: rgba(0, 0, 0, 0);
+  color: #BCC6F0;
+  font-family: Hack Nerd Font;
+  font-size: 14px;
+}
+
+.bar {
+  background-color: #1A1A1A;
+  box-shadow: 1px 2px 10px rgba(20, 27, 36, 0.5);
+  padding: 4px;
+  margin: 0 17px;
+  border-radius: 5px;
+  border: solid 1px rgba(20, 27, 36, 0.5);
+}
+
+// Styles on classes (see eww.yuck for more information)
+
+.sidestuff {
+  color: #BCC6F0;
+}
+
+.music {
+  margin-right: 80px;
+}
+
+.audio {
+  color: #BCC6F0;
+  padding-right: 10px;
+  border-radius: 16px;
+}
+
+.circular-progress {
+  color: #BCC6F0;
+  background-color: #0f0f17;
+  border-radius: 10px;
+}
+
+.brightness {
+  color: #BCC6F0;
+  padding-right: 10px;
+}
+
+.net {
+  color: #BCC6F0;
+  padding-right: 10px;
+}
+
+.paru {
+  color: #98971a;
+  padding-right: 10px;
+}
+
+.paru-empty {
+  color: #98971a;
+  padding-right: 0px;
+}
+
+.scratchpad {
+  color: #BCC6F0;
+  padding-right: 10px;
+}
+
+.scratchpad-empty {
+  color: #BCC6F0;
+  padding-right: 0px;
+}
+
+.clock {
+  color: #BCC6F0;
+}
+
+.idle {
+  color: #BCC6F0;
+  padding-right: 10px;
+}
+
+.language {
+  color: #BCC6F0;
+  padding-right: 10px;
+}
+
+.battery {
+  color: #BCC6F0;
+  padding-right: 10px;
+}
+
+.w0,
+.w01,
+.w02,
+.w03,
+.w04,
+.w05,
+.w06,
+.w07,
+.w08,
+.w09,
+.w011,
+.w022,
+.w033,
+.w044,
+.w055,
+.w066,
+.w077,
+.w088,
+.w099 {
+  padding: 3px 5px;
+}
+
+/* Unoccupied */
+.w0 {
+  color: #60667c;
+}
+
+/* Occupied */
+.w01,
+.w02,
+.w03,
+.w04,
+.w05,
+.w06,
+.w07,
+.w08,
+.w09 {
+  color: #939cc0;
+
+  text-shadow: 1px 1px 4px rgba(192, 202, 245, 0.5);
+}
+
+/* Focused */
+.w011,
+.w022,
+.w033,
+.w044,
+.w055,
+.w066,
+.w077,
+.w088,
+.w099 {
+  color: #C0CAF5;
+  // box-shadow: inset 0 -3px #98971a;
+
+  text-shadow: 1px 1px 4px rgba(192, 202, 245, 0.5);
+}
+
+.workspace {
+  padding: 0 10px;
+}
+
+.workspace button:hover {
+  color: #C0CAF5;
+  text-shadow: 1px 1px 3px #C0CAF5;
+}
+
+.systray {
+  color: #C0CAF5;
+  border-radius: 0;
+  * {
+
+    background-color: #1A1A1A;
+    border-radius: 0;
+    padding: 2px;
+    box-shadow: none;
+    margin: 0;
+
+    &:hover{
+      color:#60667c;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "output": ["HDMI-A-2"],
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["custom/separator","custom/playerctl","custom/separator", "network", "pulseaudio", "custom/separator", "tray"],
+  "hyprland/window": {
+    "format": "{initialTitle}",
+    "interval": 1
+  },
+  "hyprland/workspaces": {
+      "format": "{icon}",
+      "tooltip": false,
+      "format-icons": {
+        "active": "<span color='#bbbbbb'> </span>",
+        "empty": "<span color='#c0caf5'> </span>",
+        "default": "<span color='#7aa2f7'> </span>",
+        "urgent": "<span color='#c16019'> </span>"
+      },
+      "persistent-workspaces": {
+           "*": 10 
+     }
+    },
+   "custom/playerctl": {
+       "interval": 1,
+       "exec": "playerctl metadata title | cut -c 1-36",
+       "escape": true,
+       "format": " {}"
+  },
+  "network": {
+    "format-wifi": "󰤯   {essid}",
+    "format-ethernet": "󰈀  ",
+    "format-disconnected": "󰤮   Disconnected",
+    "interval": 10
+  },
+  "clock": {
+    "format": "{:%d/%m/%Y  %H:%M}",
+    "interval": 10
+  },
+  "pulseaudio": {
+    "format": "{icon}{volume}",
+    "format-muted": " muted",
+    "format-icons": {
+        "headphone": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": [" ", " ", "󰕾 ", "󰕾 ", "󰕾 ", " ", " ", " "]
+    },
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "interval": 1
+  },
+  "custom/separator": {
+    "format": "    ",
+    "interval": "once",
+    "tooltip": false
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  }
+}
