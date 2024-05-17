@@ -6,6 +6,7 @@
 - StatusBar `eww`
 - Distro `ArchLinux`
 - Notifications `dunst`
+- AppManager `wofi`
 - File Manager `joshuto`
 
 There are hidden files, remember to look at them!
